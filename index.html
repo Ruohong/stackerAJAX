@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Stack Overflow AJAX Demo</title>
 	<link rel="stylesheet" href="main.css">
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="jquery-1.11.1.min.js"></script>
 	<script src="app.js"></script>
 </head>
 <body>
@@ -30,6 +30,10 @@
 				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
 				<input type="submit" value="Submit">
 			</form>
+			<select id="alltime_month">
+				<option value="all_time">all_time</option>
+				<option value="month">month</option>
+			</select>
 		</div>
 		<div class="results-container">
 			<div class="search-results"></div>
@@ -50,6 +54,22 @@
 		<div class="error">
 			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
 		</div>
+
+		<dl class="result topanswerer">
+			<dt>Display Name</dt>
+				<dd class="name-text"><a href="" target="_blank"></a></dd>
+			<dt>Profile Image</dt>
+				<dd class="profile-image"><img src=""></img></dd>
+			<dt>Active Degree</dt>
+				<dd class="reputation"></dd>
+				<dd class="post_count"></dd>
+				<dd class="score"></dd>
+		</dl>
+		</div>
+		<div class="error2">
+			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+		</div>
+
 	</div>
 </body>
 </html>
